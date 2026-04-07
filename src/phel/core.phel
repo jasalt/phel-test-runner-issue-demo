@@ -1,0 +1,16 @@
+(ns app\core)
+
+(defn plus-one [x]
+  "See test in "
+  (+ 1 x))
+
+(defn main []
+  (println "Writing file \"foo.txt\" with Amp\\File\\write")
+  (php/amp\file\write "foo.txt" "WORKS!")
+  (println "Reading it with Amp\\File\\read")
+  (println (php/amp\file\read "foo.txt"))
+  )
+
+
+(main)  ; this has to be commented for test runner to run correctly, else getting:
+;; Call to undefined function app\core\amp\file\write() // file: /tmp/phel/cache/compiled/app_core.php

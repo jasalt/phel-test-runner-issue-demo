@@ -1,0 +1,7 @@
+(ns app\test-core
+  (:require phel\test :refer [deftest is])
+  (:require app\core :refer [plus-one]))
+
+(deftest test-plus-one
+  (is (= 2 (plus-one 1)) "test plus-one")
+  )

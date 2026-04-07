@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phel-lang/phel-lang": "dev-main",
+        "amphp/file": "^3.2"
+    }
+}
